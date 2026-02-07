@@ -11,8 +11,19 @@ Muhammad Waleed Aslam, Sami Ul Rehman, Abu Muaz Muhammad Tayyab, Muhammad Hamza,
 
 > **Abstract:** Remote sensing (RS) image super-resolution (SR) supports downstream tasks in mapping, monitoring, and recognition, yet curvilinear structures and repetitive textures that encode scene topology are aliased by downsampling. Generic attention without geometric priors tends to yield jagged edges and washed-out detail. To address this, we present Curvature-Guided Attention (CGA), which injects curvature cues into local windowed attention and token-based global aggregation within a standard transformer framework. A local curvature-guided attention (LCGA) reinforces edge and line continuity inside windows, while a curvature-guided token attention (CGTA) selects globally informative tokens with near linear complexity, avoiding heavyweight global modules and extra branches. The resulting design preserves structural layout and texture regularity without degrading natural regions, and integrates with conventional residual groups. Across datasets and scale factors, CGA attains higher reconstruction fidelity than state-of-the-art SR models, with qualitative results showing clearer geometry and fewer artifacts. Ablations isolate the role of each component and confirm complementary benefits, and an efficiency-oriented variant retains the main trend under tighter memory and latency. We further validate CGA on real-world RS imagery without simulated degradation. These findings indicate that curvature guidance is an effective and practical inductive bias for RS image SR, strengthening both aggregate and class-level performance across scenes and scales while keeping computational complexity tractable.
 
+---
+
+## CGA
 ![](figs/CGA.png)
+
+---
+
+## LCGA
 ![](figs/LCGA.png)
+
+---
+
+## CGTA
 ![](figs/CGTA.png)
 
 ---
